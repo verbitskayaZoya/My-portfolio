@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevZoya Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Чем я могу быть полезна</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Мои учебные проекты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Добро пожаловать <strong>Меня зовут Зоя</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Я начинающий front-end dev
+      </p>
+      <img src="img/zoya-01.JPEG" alt="a picture of Zoya" class="intro__img" />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        Чем я могу быть полезна
+      </h2>
+      <div class="services">
+        <div class="service">
+          <h3>Дизайн</h3>
+          <p>
+            Имею учебный опыт работы с Figma дизайнами. Также работала с Adobe
+            XD. Знаю основы UI & UX.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Разработка</h3>
+          <p>
+            Имею учебный опыт работы с JavaScript, React, Bootstrap, CSS(grid,
+            flex), Responsive design, HTML, ES6+.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Анимация</h3>
+          <p>
+            Имею учебный опыт работы с Vyond, iMovie. Люблю работать над видео.
+            С удовольствием освою Adobe after effects or Camtasia.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">Мои учебные проекты</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Обо мне</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Ориентирована на развитие & результат
+      </p>
+      <p class="section__subtitle">Мой предыдущий опыт</p>
+      <div class="video">
+        <div class="video__container">
+          <video class="video__item" width="250" height="170" controls>
+            <source src="img/timeline-01.mp4" type="video/mp4" />
+          </video>
+          <p>Пиар</p>
+        </div>
+
+        <div class="video__container">
+          <video class="video__item" width="250" height="170" controls>
+            <source src="img/timeline-02.mp4" type="video/mp4" />
+          </video>
+          <p>Авиация</p>
+        </div>
+
+        <div class="video__container">
+          <video class="video__item" width="250" height="170" controls>
+            <source src="img/timeline-03.mp4" type="video/mp4" />
+          </video>
+          <p>Обучение</p>
+        </div>
+      </div>
+
+      <div class="about-me__body">
+        <p>
+          Преподавая онлайн, я стала переводить информацию в цифровой формат, и
+          поняла, что это эффективнее для учебного процесса. Для создания
+          электронного контента я изучила программу Articulate Storyline.
+          <a
+            href="https://zoyasprojects.s3.us-east-2.amazonaws.com/ADDIE+Custom+Menu+-+Storyline+output/story.html"
+            target="blank"
+          >
+            Пример работы.
+          </a>
+        </p>
+        <p>
+          Для расширения возможностей Storyline я начала изучать JavaScript, что
+          привело меня к смене профессии на front-end developer.
+        </p>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Мои учебные проекты</h2>
+      <p class="section__subtitle section__subtitle--work">
+        JavaScript & React
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="img/twimba-01.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio-item-second.html" class="portfolio__item">
+          <img src="img/extension-02.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio-item-third.html" class="portfolio__item">
+          <img src="img/meme-03.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="portfolio-item-forth.html" class="portfolio__item">
+          <img src="img/tenzies-04.png" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:verb.zoya@gmail.com" class="footer__link"
+        >verb.zoya@gmail.com</a
+      >
+      <ul class="social-list">
+        <!-- ADD LATER <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li> -->
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/stars/verbitskayaZoya/lists/study-projects"
+            target="blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
